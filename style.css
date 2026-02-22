@@ -1,4 +1,3 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,83 +6,65 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #f4f6f9;
-    color: #333;
-}
-
-/* HERO SECTION */
-.hero {
-    height: 70vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                linear-gradient(120deg, #002147, #004080);
+    background: linear-gradient(135deg, #002147, #004080);
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
-/* ACCESS SECTION */
-.access-section {
-    display: flex;
-    justify-content: center;
-    margin-top: -80px;
-    padding: 0 20px 80px;
-}
-
-.access-card {
+.main-container {
     background: white;
-    padding: 40px;
-    max-width: 500px;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px 25px;
+    border-radius: 15px;
     text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
-.access-card h2 {
+.logo {
+    width: 90px;
     margin-bottom: 15px;
-    color: #002147;
 }
 
-.access-card p {
+h1 {
+    font-size: 22px;
+    color: #002147;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
     margin-bottom: 25px;
-    line-height: 1.6;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #004080;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 20px;
     color: #555;
 }
 
-/* BUTTON */
-.primary-btn {
+.btn {
     display: inline-block;
-    padding: 14px 30px;
+    width: 100%;
+    padding: 12px;
     background: #004080;
     color: white;
     text-decoration: none;
+    border-radius: 8px;
     font-weight: bold;
-    border-radius: 6px;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
-.primary-btn:hover {
+.btn:hover {
     background: #002147;
-    transform: translateY(-2px);
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #002147;
-    color: white;
-    font-size: 14px;
 }
