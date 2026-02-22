@@ -18,35 +18,43 @@ body {
     background: var(--light);
 }
 
+/* NAVBAR */
 .navbar {
     background: var(--dark);
-    color: white;
-    padding: 15px;
     text-align: center;
+    padding: 12px 10px;
 }
 
+.navbar img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+}
+
+/* HERO */
 .hero {
     background: linear-gradient(rgba(211,47,47,0.95), rgba(183,28,28,0.95));
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 70px 20px;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     opacity: 0.9;
 }
 
+/* CARD */
 .card {
     background: white;
     max-width: 500px;
-    margin: -60px auto 60px;
-    padding: 40px;
+    margin: -50px auto 60px;
+    padding: 35px 25px;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     text-align: center;
@@ -77,11 +85,30 @@ body {
     transform: scale(1.05);
 }
 
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 25px;
     background: var(--dark);
     color: white;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        margin: -40px 20px 50px;
+        padding: 25px 20px;
+    }
+
 }
 </style>
 </head>
@@ -89,7 +116,8 @@ footer {
 <body>
 
 <div class="navbar">
-    <h2>IPS Academy Jhabua</h2>
+    <!-- Replace logo.png with your actual image path -->
+    <img src="images/logo.png" alt="IPS Academy Jhabua Logo">
 </div>
 
 <div class="hero">
