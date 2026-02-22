@@ -1,30 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>IPS Academy Jhabua | Career Solution Magazine</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+<title>IPS Academy Jhabua | Career Solution Magazine</title>
+
+<style>
+:root {
+    --primary: #d32f2f;
+    --dark: #111;
+    --light: #f4f6f9;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--light);
+}
+
+.navbar {
+    background: var(--dark);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.hero {
+    background: linear-gradient(rgba(211,47,47,0.95), rgba(183,28,28,0.95));
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.card {
+    background: white;
+    max-width: 500px;
+    margin: -60px auto 60px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b71c1c;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: var(--dark);
+    color: white;
+}
+</style>
 </head>
+
 <body>
 
-<div class="container">
+<div class="navbar">
+    <h2>IPS Academy Jhabua</h2>
+</div>
+
+<div class="hero">
     <h1>Career Solution Magazine</h1>
     <p>Official Monthly Career Guidance Publication</p>
-
-    <div class="card">
-        <h2>Register to Access Magazine</h2>
-        <p>
-            Please complete the registration form to access
-            the latest editions of Career Solution Magazine.
-        </p>
-
-        <a class="btn"
-           href="https://docs.google.com/forms/d/e/1FAIpQLSdT20qAjb5lVCW1Z-tyvDCnj49dNQ_HcuuCNluuAKbZM-xK1w/viewform"
-           target="_blank">
-           Register Now
-        </a>
-    </div>
 </div>
+
+<div class="card">
+    <h2>Register to Access Magazine</h2>
+    <p>
+        Students must complete the registration form 
+        before accessing the digital magazine editions.
+    </p>
+
+    <a class="btn"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSdT20qAjb5lVCW1Z-tyvDCnj49dNQ_HcuuCNluuAKbZM-xK1w/viewform"
+       target="_blank">
+       Register Now
+    </a>
+</div>
+
+<footer>
+© 2026 IPS Academy Jhabua | All Rights Reserved
+</footer>
 
 </body>
 </html>
