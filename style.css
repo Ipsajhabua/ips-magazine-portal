@@ -1,70 +1,149 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #002147, #004080);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
     min-height: 100vh;
-    padding: 20px;
 }
 
-.main-container {
-    background: white;
-    width: 100%;
-    max-width: 420px;
-    padding: 30px 25px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+/* Header */
+.header {
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .logo {
-    width: 90px;
-    margin-bottom: 15px;
+    height: 60px;
 }
 
-h1 {
+.header h1 {
     font-size: 22px;
-    color: #002147;
-    margin-bottom: 5px;
 }
 
-.subtitle {
+.header p {
     font-size: 14px;
-    color: #666;
-    margin-bottom: 25px;
+    opacity: 0.8;
 }
 
-.card h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #004080;
+/* Magazine Section */
+.magazine-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
 }
 
-.card p {
-    font-size: 14px;
+/* Card */
+.magazine-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 900px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.magazine-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Cover Image */
+.magazine-cover {
+    width: 350px;
+    object-fit: cover;
+}
+
+/* Content */
+.magazine-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.magazine-content h2 {
+    font-size: 28px;
     margin-bottom: 20px;
-    color: #555;
+}
+
+.magazine-content p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 15px;
 }
 
 .btn {
-    display: inline-block;
-    width: 100%;
-    padding: 12px;
-    background: #004080;
-    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+    font-weight: 600;
     transition: 0.3s;
 }
 
-.btn:hover {
-    background: #002147;
+.view-btn {
+    background: #00c6ff;
+    color: #000;
+}
+
+.view-btn:hover {
+    background: #00a2d3;
+}
+
+.download-btn {
+    background: #ff9800;
+    color: #000;
+}
+
+.download-btn:hover {
+    background: #e68900;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .magazine-card {
+        flex-direction: column;
+    }
+
+    .magazine-cover {
+        width: 100%;
+    }
+
+    .magazine-content {
+        padding: 25px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
 }
