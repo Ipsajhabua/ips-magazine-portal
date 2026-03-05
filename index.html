@@ -3,23 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IPS Academy Group of Educational Institutes | Career Solution Magazine</title>
+<title>Geography Notes | IPS Academy</title>
+
+<link rel="icon" type="image/png" href="logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-:root{
---primary:#d32f2f;
---dark:#111;
---light:#f4f6f9;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-margin:0;
-font-family:'Segoe UI',sans-serif;
-background:var(--light);
+background:#f5f6fa;
 }
 
-/* NAVBAR (WHITE BACKGROUND NOW) */
+/* NAVBAR */
 
 .navbar{
 background:#ffffff;
@@ -32,97 +35,82 @@ border-bottom:1px solid #ddd;
 max-width:200px;
 width:100%;
 height:auto;
-display:block;
+}
+
+/* PAGE TITLE */
+
+.title{
+text-align:center;
+margin-top:25px;
+font-size:28px;
+font-weight:600;
+color:#333;
+}
+
+/* CAMPUS IMAGE */
+
+.campus-banner{
+width:100%;
+text-align:center;
+margin:30px 0;
+}
+
+.campus-banner img{
+width:90%;
+max-width:1100px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* NOTES SECTION */
+
+.notes-container{
+width:90%;
+max-width:900px;
 margin:auto;
 }
 
-/* HERO */
-
-.hero{
-background:linear-gradient(rgba(211,47,47,0.95), rgba(183,28,28,0.95));
-color:white;
-text-align:center;
-padding:45px 20px;
-}
-
-.hero h1{
-font-size:1.6rem;
-margin-bottom:8px;
-}
-
-.hero p{
-font-size:0.95rem;
-opacity:0.9;
-}
-
-/* CARD */
-
-.card{
+.note-card{
 background:white;
-max-width:500px;
-margin:-40px auto 60px;
-padding:30px 25px;
-border-radius:15px;
-box-shadow:0 8px 25px rgba(0,0,0,0.1);
-text-align:center;
-}
-
-.card h2{
-margin-bottom:12px;
-font-size:1.3rem;
-}
-
-.card p{
-color:#555;
-margin-bottom:22px;
-font-size:0.95rem;
-}
-
-/* BUTTON */
-
-.btn{
-display:inline-block;
-padding:12px 26px;
-background:var(--primary);
-color:white;
-text-decoration:none;
+padding:18px;
+margin-bottom:15px;
 border-radius:8px;
-font-weight:bold;
-transition:0.3s;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-.btn:hover{
-background:#b71c1c;
-transform:scale(1.05);
+.note-title{
+font-size:16px;
+color:#333;
+font-weight:500;
 }
 
-/* FOOTER (UNCHANGED) */
+.download-btn{
+background:#4CAF50;
+color:white;
+padding:8px 16px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+text-decoration:none;
+font-size:14px;
+}
+
+.download-btn:hover{
+background:#45a049;
+}
+
+/* FOOTER */
 
 footer{
-text-align:center;
-padding:22px;
-background:var(--dark);
+margin-top:40px;
+background:#222;
 color:white;
-font-size:0.9rem;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero{
-padding:35px 20px;
-}
-
-.hero h1{
-font-size:1.3rem;
-}
-
-.card{
-margin:-30px 20px 50px;
-padding:25px 20px;
-}
-
+text-align:center;
+padding:20px;
+font-size:14px;
 }
 
 </style>
@@ -130,34 +118,59 @@ padding:25px 20px;
 
 <body>
 
+<!-- NAVBAR -->
+
 <div class="navbar">
-<img src="images/logo.png" alt="IPS Academy Logo">
+<img src="logo.png" alt="IPS Academy Logo">
 </div>
 
-<div class="hero">
-<h1>Career Solution Magazine</h1>
-<p>Official Monthly Career Guidance Publication</p>
+<!-- PAGE TITLE -->
+
+<div class="title">
+Geography Notes (MP Board)
 </div>
 
-<div class="card">
+<!-- CAMPUS IMAGE -->
 
-<h2>Register to Access Magazine</h2>
+<div class="campus-banner">
+<img src="ipsacademy_cover.png" alt="IPS Academy Campus">
+</div>
 
-<p>
-Students must complete the registration form 
-before accessing the digital magazine editions.
-</p>
+<!-- NOTES -->
 
-<a class="btn"
-href="https://docs.google.com/forms/d/e/1FAIpQLSdT20qAjb5lVCW1Z-tyvDCnj49dNQ_HcuuCNluuAKbZM-xK1w/viewform"
-target="_blank">
-Register Now
-</a>
+<div class="notes-container">
+
+<div class="note-card">
+<div class="note-title">Chapter 1 – Human Geography</div>
+<a class="download-btn" href="#">Download</a>
+</div>
+
+<div class="note-card">
+<div class="note-title">Chapter 2 – The World Population</div>
+<a class="download-btn" href="#">Download</a>
+</div>
+
+<div class="note-card">
+<div class="note-title">Chapter 3 – Human Development</div>
+<a class="download-btn" href="#">Download</a>
+</div>
+
+<div class="note-card">
+<div class="note-title">Chapter 4 – Primary Activities</div>
+<a class="download-btn" href="#">Download</a>
+</div>
+
+<div class="note-card">
+<div class="note-title">Chapter 5 – Secondary Activities</div>
+<a class="download-btn" href="#">Download</a>
+</div>
 
 </div>
+
+<!-- FOOTER (UNCHANGED) -->
 
 <footer>
-© 2026 IPS Academy Group of Educational Institutes | All Rights Reserved
+© 2026 IPS Academy | Educational Resource
 </footer>
 
 </body>
