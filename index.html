@@ -17,6 +17,9 @@ body{
 margin:0;
 font-family:'Segoe UI',sans-serif;
 background:var(--light);
+min-height:100vh;
+display:flex;
+flex-direction:column;
 }
 
 /* ANIMATIONS */
@@ -59,7 +62,7 @@ transform:translateY(0);
 .navbar{
 background:var(--dark);
 text-align:center;
-padding:10px 10px;
+padding:10px;
 animation:fadeIn 1.2s ease;
 }
 
@@ -132,6 +135,31 @@ background:#b71c1c;
 transform:scale(1.08);
 }
 
+/* STICKY MOBILE BUTTON */
+
+.sticky-register{
+display:none;
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:white;
+padding:12px;
+box-shadow:0 -4px 10px rgba(0,0,0,0.15);
+text-align:center;
+z-index:999;
+}
+
+.sticky-register a{
+display:block;
+background:var(--primary);
+color:white;
+padding:14px;
+border-radius:8px;
+font-weight:bold;
+text-decoration:none;
+}
+
 /* FOOTER */
 
 footer{
@@ -140,6 +168,7 @@ padding:22px;
 background:var(--dark);
 color:white;
 font-size:0.9rem;
+margin-top:auto;
 animation:fadeIn 2s ease;
 }
 
@@ -156,8 +185,14 @@ font-size:1.3rem;
 }
 
 .card{
-margin:-30px 20px 50px;
+margin:-30px 20px 70px;
 padding:25px 20px;
+}
+
+/* show sticky button on mobile */
+
+.sticky-register{
+display:block;
 }
 
 }
@@ -196,6 +231,14 @@ Register Now
 <footer>
 © 2026 IPS Academy Group of Educational Institutes | All Rights Reserved
 </footer>
+
+<!-- STICKY MOBILE BUTTON -->
+
+<div class="sticky-register">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdT20qAjb5lVCW1Z-tyvDCnj49dNQ_HcuuCNluuAKbZM-xK1w/viewform" target="_blank">
+Register Now
+</a>
+</div>
 
 </body>
 </html>
