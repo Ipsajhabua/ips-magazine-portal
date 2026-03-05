@@ -22,11 +22,11 @@ body {
 .navbar {
     background: var(--dark);
     text-align: center;
-    padding: 12px 10px;
+    padding: 10px 10px;
 }
 
 .navbar img {
-    max-width: 220px;
+    max-width: 200px;
     width: 100%;
     height: auto;
 }
@@ -36,16 +36,16 @@ body {
     background: linear-gradient(rgba(211,47,47,0.95), rgba(183,28,28,0.95));
     color: white;
     text-align: center;
-    padding: 70px 20px;
+    padding: 45px 20px; /* reduced red area */
 }
 
 .hero h1 {
-    font-size: 2.0rem;
-    margin-bottom: 10px;
+    font-size: 1.3rem; /* slightly smaller */
+    margin-bottom: 8px;
 }
 
 .hero p {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     opacity: 0.9;
 }
 
@@ -53,25 +53,27 @@ body {
 .card {
     background: white;
     max-width: 500px;
-    margin: -50px auto 60px;
-    padding: 35px 25px;
+    margin: -40px auto 60px;
+    padding: 30px 25px;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     text-align: center;
 }
 
 .card h2 {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    font-size: 1.3rem; /* reduced size */
 }
 
 .card p {
     color: #555;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
+    font-size: 0.95rem;
 }
 
 .btn {
     display: inline-block;
-    padding: 14px 30px;
+    padding: 12px 26px;
     background: var(--primary);
     color: white;
     text-decoration: none;
@@ -88,16 +90,17 @@ body {
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 25px;
+    padding: 22px;
     background: var(--dark);
     color: white;
+    font-size: 0.9rem;
 }
 
 /* MOBILE OPTIMIZATION */
 @media (max-width: 768px) {
 
     .hero {
-        padding: 50px 20px;
+        padding: 35px 20px;
     }
 
     .hero h1 {
@@ -105,7 +108,7 @@ footer {
     }
 
     .card {
-        margin: -40px 20px 50px;
+        margin: -30px 20px 50px;
         padding: 25px 20px;
     }
 
@@ -116,7 +119,6 @@ footer {
 <body>
 
 <div class="navbar">
-    <!-- Replace logo.png with your actual image path -->
     <img src="images/logo.png" alt="IPS Academy Logo">
 </div>
 
@@ -145,6 +147,3 @@ footer {
 
 </body>
 </html>
-
-
-
