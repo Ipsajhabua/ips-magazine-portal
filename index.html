@@ -17,9 +17,19 @@ body{
 margin:0;
 font-family:'Segoe UI',sans-serif;
 background:var(--light);
+
+/* FIX FOR FOOTER POSITION */
+display:flex;
+flex-direction:column;
+min-height:100vh;
 }
 
-/* NAVBAR (WHITE BACKGROUND NOW) */
+/* MAIN CONTENT AREA */
+main{
+flex:1;
+}
+
+/* NAVBAR */
 
 .navbar{
 background:#ffffff;
@@ -96,7 +106,7 @@ background:#b71c1c;
 transform:scale(1.05);
 }
 
-/* FOOTER (UNCHANGED) */
+/* FOOTER */
 
 footer{
 text-align:center;
@@ -134,6 +144,8 @@ padding:25px 20px;
 <img src="images/logo.png" alt="IPS Academy Logo">
 </div>
 
+<main>
+
 <div class="hero">
 <h1>Career Solution Magazine</h1>
 <p>Official Monthly Career Guidance Publication</p>
@@ -155,6 +167,8 @@ Register Now
 </a>
 
 </div>
+
+</main>
 
 <footer>
 © 2026 IPS Academy Group of Educational Institutes | All Rights Reserved
